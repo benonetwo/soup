@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import "../../Css/DetailStory.css"
 import Loader from '../GeneralScreens/Loader';
-import { FaRegHeart, FaHeart } from 'react-icons/fa'
+import { FaRegHeart, FaHeart, FaHandsHelping } from 'react-icons/fa'
 import { RiDeleteBin6Line } from 'react-icons/ri'
 import { FiEdit, FiArrowLeft } from 'react-icons/fi'
 import { FaRegComment } from 'react-icons/fa'
@@ -247,21 +247,34 @@ const DetailStory = () => {
                 <div className='fixed-story-options'>
 
                   <ul>
-                    <li>
+                  <ul>
+                  <li>
+                    <i onClick={handleLike}>
+                      {likeStatus ? (
+                        <FaHandsHelping color="#0063a5" size={29} />
+                      ) : (
+                        <FaHandsHelping size={29} />
+                      )}
+                    </i>
 
-                      <i onClick={handleLike} >
+                    <b
+                      className="likecount"
+                      style={likeStatus ? { color: "#0063a5" } : { color: "rgb(99, 99, 99)" }}
+                    >
+                      {likeCount}
+                    </b>
+                    <span
+                      style={{
+                        marginLeft: "5px", // Adds spacing between count and text
+                        color: likeStatus ? "#0063a5" : "rgb(99, 99, 99)", // Matches the color
+                        fontWeight: "bold",
+                      }}
+                    >
+                      volunteers
+                    </span>
+                  </li>
+                </ul>
 
-                        {likeStatus ? <FaHeart color="#0063a5" /> :
-                          <FaRegHeart />
-                        }
-                      </i>
-
-                      <b className='likecount'
-                        style={likeStatus ? { color: "#0063a5" } : { color: "rgb(99, 99, 99)" }}
-                      >  {likeCount}
-                      </b>
-
-                    </li>
 
 
                     <li>

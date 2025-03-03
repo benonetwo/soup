@@ -21,7 +21,7 @@ header .logo {
     text-decoration: none;
     color: black;
     font-family: 'Staatliches', cursive;
-    color: #0063a5;
+    color: #d15e9d;
 }
 
 header .logo h5 {
@@ -47,8 +47,8 @@ header .logo h5 {
 }
 
 .addStory-link {
-    color: #0063a5 !important;
-    border: #0063a5 solid 2px;
+    color: #d15e9d !important;
+    border: #d15e9d solid 2px;
     padding: 4px 10px !important;
     margin-right: 2rem;
     border-radius: 4px;
@@ -56,9 +56,9 @@ header .logo h5 {
 }
 
 .register-link {
-    border: #0063a5 solid 2px;
+    border: #d15e9d solid 2px;
     border-radius: 4px;
-    color: #0063a5 !important;
+    color: #d15e9d !important;
 }
 
 .search-form {
@@ -180,15 +180,15 @@ header .logo h5 {
 }
 
 .readList-link {
-    color: black;
+    color: #d15e9d;
     font-size: 2rem;
     margin-right: 1.8rem;
-    color: #024d80;
+    color: #d15e9d;
     position: relative;
 }
 
 .readList-link:hover {
-    color: #024d80;
+    color: #d15e9d;
 }
 
 #readListLength {
